@@ -1,26 +1,29 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Nav from 'react-bootstrap/Nav';
-
-//Sprint backlog # 1 ID-001
-import NavBar_User from './NavBar_User';
-
-//Sprint backlog # 1 ID-002
-import NavBar_Admin from './NavBar_Admin';
+//Sprint backlog # 1 ID-001 & ID-002 
+import NavBarReact from './components/navBarReact';
 
 
+//Sprint backlog # 2 ID-003
+import JumboTronReact from './components/jumboTronReact';
+
+// Sprint backlog # 2 ID-009
+import HelpAlert from './components/helpAlert';
+
+// Sprint backlog # 2 ID-012 & ID-013
+import SensorProgress from './components/sensorProgress';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <NavBar_User />  { /* Sprint backlog # 1 ID-001 */ }
-      <NavBar_Admin /> {  /* Sprint backlog # 1 ID-002 */ }
+      <NavBarReact />
+      <JumboTronReact />
+      <p>Sensores</p>
+      <SensorProgress />
+      <HelpAlert />
 
-      </header>
-    </div>
+  </div>
   );
 }
 //  César Simón García - 220336404 @LSDW UdGVirtual
